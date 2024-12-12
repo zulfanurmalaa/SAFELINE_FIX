@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SAFELINE</string>
+    <string name="welcome_to_splash">Welcome to</string>
+
+
+    <string name="title_starter">Starter</string>
+    <string name="title_home">Home</string>
+    <string name="title_metrics">Metrics</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome_starter">Welcome to\nSAFELINE!</string>
+    <string name="title_history">History</string>
+    <string name="monitoring_activity_home">Monitoring Activity</string>
+    <string name="fall_history_metrics">Fall History</string>
+    <string name="info_profile">Masukkan nama Anda dan tambahkan foto profil (opsional)</string>
+    <string name="nama">Nama</string>
+    <string name="input">Input</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="fall_danger_history">Fall Danger</string>
+    <string name="danger_history">Danger</string>
+</resources>

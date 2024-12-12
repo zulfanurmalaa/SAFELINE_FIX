@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_starter">
+
+    <fragment
+        android:id="@+id/navigation_starter"
+        android:name="com.capstone.fall_guard.ui.main.starter.StarterFragment"
+        android:label="@string/title_starter"
+        tools:layout="@layout/fragment_starter" >
+        <action
+            android:id="@+id/action_navigation_starter_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_starter_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_starter_to_navigation_metrics"
+            app:destination="@id/navigation_metrics" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.capstone.fall_guard.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_metrics"
+            app:destination="@id/navigation_metrics" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_metrics"
+        android:name="com.capstone.fall_guard.ui.main.metrics.MetricsFragment"
+        android:label="@string/title_metrics"
+        tools:layout="@layout/fragment_metrics" >
+        <action
+            android:id="@+id/action_navigation_metrics_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_metrics_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.capstone.fall_guard.ui.main.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_metrics"
+            app:destination="@id/navigation_metrics" />
+    </fragment>
+</navigation>
